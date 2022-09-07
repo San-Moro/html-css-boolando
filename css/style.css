@@ -13,21 +13,23 @@ html {
 
 .container {
     width: 74%;
-    margin: 0 auto;
+    flex-wrap: wrap;
     /* DEBUG */
-    height: 5em;
+    min-height: 5em;
     background-color: rgb(115, 94, 56);
 }
 
 .flex {
     display: flex;
-    align-items: center
+    justify-content: center;
+    align-items: center;
 }
 
 /* HEADER */
 header {
     width: 100%;
     background-color: #ff6900;
+    margin-bottom: 5em;
     /* DEBUG */
     height: 8em;
 }
@@ -54,4 +56,13 @@ header {
 }
 
 /* MAIN */
+
+.card {
+    width: calc(100% / 3 - 25px);
+    justify-content: space-between; /* perchè non funziona?   */
+    /* DEBUG */
+    height: 65em;
+    background-color: blanchedalmond;
+    border: 2px dashed seagreen;
+}
 
