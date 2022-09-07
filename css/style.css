@@ -13,6 +13,7 @@ html {
 
 .container {
     width: 74%;
+    margin: auto;
     flex-wrap: wrap;
     /* DEBUG */
     min-height: 5em;
@@ -23,13 +24,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* HEADER */
 header {
     width: 100%;
     background-color: #ff6900;
-    margin-bottom: 5em;
     /* DEBUG */
     height: 8em;
 }
@@ -52,17 +53,60 @@ header {
 }
 
 .icons-nav {
-    justify-content: flex-end; /* perchè non funziona?   */
+    
 }
 
 /* MAIN */
 
 .card {
-    width: calc(100% / 3 - 25px);
-    justify-content: space-between; /* perchè non funziona?   */
+    width: calc(100% / 3 - 20px);
+    margin-top: 5em;
+    position: relative;
     /* DEBUG */
     height: 65em;
     background-color: blanchedalmond;
+    border: 2px dashed seagreen;
+}
+
+.heart {
+    width: 5em;
+    margin-top: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* DEBUG */
+    height: 5em;
+    background-color: palevioletred;
+}
+
+.red {
+    width: 6em;
+    margin-top: 1em;
+    background-color: red;
+    position: absolute;
+    bottom: 5em;
+    left: 0;
+    /* DEBUG */
+    height: 3em;
+    
+}
+
+.green {
+    width: 13em;
+    margin-top: 1em;
+    background-color: green;
+    position: absolute;
+    bottom: 5em;
+    left: 7em;
+    /* DEBUG */
+    height: 3em;
+    
+}
+
+.text-product {
+    width: calc(100% / 3 - 20px);
+    /* DEBUG */
+    background-color: rgb(177, 142, 210);
     border: 2px dashed seagreen;
 }
 
