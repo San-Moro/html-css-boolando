@@ -13,7 +13,7 @@ html {
 
 .container {
     width: 74%;
-    margin: auto;
+    margin: 0 auto;
     flex-wrap: wrap;
     /* DEBUG */
     min-height: 5em;
@@ -110,3 +110,27 @@ header {
     border: 2px dashed seagreen;
 }
 
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* DEBUG */
+    height: 12em;
+}
+
+.container-footer {
+    width: 74%;
+    height: 10em;
+    margin: 0 auto;
+    border: 1px dashed white;
+}
+
+.text-footer,
+.social {
+    width: 20em;
+    /* DEBUG */
+    height: 5em;
+    background-color: white;
+}
