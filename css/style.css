@@ -1,0 +1,57 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 74%;
+    margin: 0 auto;
+    /* DEBUG */
+    height: 5em;
+    background-color: rgb(115, 94, 56);
+}
+
+.flex {
+    display: flex;
+    align-items: center
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: #ff6900;
+    /* DEBUG */
+    height: 8em;
+}
+
+.filter,
+.logo,
+.icons-nav {
+    width: 5em;
+    /* width: calc(100% / 3); */
+    line-height: 3em;
+    flex-grow: 1;
+    color: white;
+    /* DEBUG */
+    height: 3em;
+    border: 1px solid black;
+}
+
+.logo {
+    text-align: center;
+}
+
+.icons-nav {
+    justify-content: flex-end; /* perchè non funziona?   */
+}
+
+/* MAIN */
+
