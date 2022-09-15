@@ -95,6 +95,16 @@ main {
     position: relative;
 }
 
+.first-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-image:hover .first-image {
+    display: none;
+}
+
 .heart {
     width: 5em;
     margin-top: 1em;
