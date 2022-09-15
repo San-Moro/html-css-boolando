@@ -7,19 +7,30 @@
 
 /* COMMON */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 62.5%;
-}
-
-.container {
-    width: 74%;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 img {
     max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.col {
+    width: calc(100% / 3 - 12px);
+    margin-bottom: 5em;
 }
 
 .flex {
@@ -80,14 +91,8 @@ main {
     margin-top: 100px;
 }
 
-.card {
-    width: calc(100% / 3 - 20px);
-    margin-top: 5em;
+.card-image {
     position: relative;
-    /* DEBUG */
-    height: 65em;
-    background-color: blanchedalmond;
-    border: 2px dashed seagreen;
 }
 
 .heart {
@@ -96,40 +101,52 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    /* DEBUG */
-    height: 5em;
-    background-color: palevioletred;
+    background-color: white;
+}
+.heart i {
+    color: black;
+}
+
+.heart i:hover {
+    color: red;
+} 
+
+.labels {
+    position: absolute;
+    bottom: 4em;
+    left: 0;
+}
+
+.label {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: white;
+    padding: .5em .8em;
 }
 
 .red {
-    width: 6em;
-    margin-top: 1em;
     background-color: red;
-    position: absolute;
-    bottom: 5em;
-    left: 0;
-    /* DEBUG */
-    height: 3em;
-    
 }
 
 .green {
-    width: 13em;
-    margin-top: 1em;
     background-color: green;
-    position: absolute;
-    bottom: 5em;
-    left: 7em;
-    /* DEBUG */
-    height: 3em;
-    
 }
 
+/* text-product */
+
 .text-product {
-    width: calc(100% / 3 - 20px);
-    /* DEBUG */
-    background-color: rgb(177, 142, 210);
-    border: 2px dashed seagreen;
+   font-size: 1.2rem;
+}
+
+.text-product h3 {
+    color: red;
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.text-product span {
+    text-decoration: line-through;
+    
 }
 
 /* FOOTER */
