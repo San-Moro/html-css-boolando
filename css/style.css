@@ -13,11 +13,13 @@ html {
 
 .container {
     width: 74%;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-    /* DEBUG */
-    min-height: 5em;
-    background-color: rgb(115, 94, 56);
+}
+
+img {
+    max-width: 100%;
 }
 
 .flex {
@@ -25,38 +27,58 @@ html {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    min-height: 8em;
+}
+
+/* UTILITIES */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-right: .8em;
+}
+
+i {
+    font-size: 1.5em;
+    padding: .5em;
+    color: white;
 }
 
 /* HEADER */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: #ff6900;
-    /* DEBUG */
-    height: 8em;
+    z-index: 99;
 }
 
 .filter,
 .logo,
 .icons-nav {
     width: 5em;
-    /* width: calc(100% / 3); */
+    width: calc(100% / 3);
     line-height: 3em;
-    flex-grow: 1;
     color: white;
-    /* DEBUG */
-    height: 3em;
-    border: 1px solid black;
 }
 
-.logo {
-    text-align: center;
+.logo img {
+    height: 40px ;
+    margin: 0 auto;
 }
 
 .icons-nav {
-    
+    display: flex;
+    justify-content: flex-end
 }
 
 /* MAIN */
+
+main {
+    margin-top: 100px;
+}
 
 .card {
     width: calc(100% / 3 - 20px);
