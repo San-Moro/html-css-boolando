@@ -45,9 +45,6 @@ img {
 a {
     text-decoration: none;
     color: white;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding-right: .8em;
 }
 
 i {
@@ -64,6 +61,12 @@ header {
     width: 100%;
     background-color: #ff6900;
     z-index: 99;
+}
+
+.filter a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-right: .8em;
 }
 
 .filter,
@@ -165,21 +168,37 @@ footer {
     background-color: black;
     display: flex;
     align-items: center;
-    /* DEBUG */
-    height: 12em;
-}
-
-.container-footer {
-    width: 74%;
-    height: 10em;
-    margin: 0 auto;
-    border: 1px dashed white;
+    color: white;
 }
 
 .text-footer,
 .social {
-    width: 20em;
-    /* DEBUG */
-    height: 5em;
-    background-color: white;
+    width: 30%;
+    height: 100%;
+    margin: 3em 0;
 }
+
+.text-footer h3 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.text-footer li,.icons-social li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    padding-right: .8em;
+    list-style-type: none;
+}
+
+.social h2 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+
+.social h2,.icons-social ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
